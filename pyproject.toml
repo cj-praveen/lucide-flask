@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lucide-flask"
+version = "1.0"
+description = "A lucide icon extension for Flask."
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [
+  { name = "Praveen CJ" }
+]
+requires-python = ">=3.9"
+
+dependencies = [
+  "flask>=2.2",
+  "httpx==0.28.1",
+  "MarkupSafe==3.0.3",
+  "minify_html==0.18.1"
+]
+
+
+classifiers = [
+  "Framework :: Flask",
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
